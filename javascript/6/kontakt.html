@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="PL-pl">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="styl.css">
+    <title>Usługi informatyczne</title>
+    <script>
+        function usluga(){
+            var name = document.getElementById("name").value;
+            var surname = document.getElementById("surname").value;
+            var service = document.getElementById("service").value;
+            if (document.getElementById("statute").checked == true)
+                document.getElementById("wynik").innerHTML = name.toUpperCase()+" "+surname.toUpperCase()+"<br> Treść Twojej sprawy: "+service+"<br> Na podany e-mail zostanie wysłana oferta.";
+            else 
+                document.getElementById("wynik").innerHTML = "<font color = red> Musisz zapoznać się z regulaminem </font>";
+        }
+
+    </script>
+</head>
+<body>
+<section id="kontener">
+    <article class="menu" id="logo">
+        <img src="logo.png" alt="logo firmy">
+    </article>
+    <article class="menu" id="menu">
+        <a href="index.html">O nas</a>
+        <a href="uslugi.html">Usługi</a>
+        <a href="kontakt.html">Kontakt</a>
+    </article>
+    <article id="baner">
+        <img src="animacja.gif">
+    </article>
+    <article id="main">
+        <hr>
+        <h1>Kontakt</h1>
+        <table>
+            <form>
+                <tr><td>Imię:</td><td><input type="text" id="name"></td></tr>
+                <tr><td>Nazwisko:</td><td><input type="text" id="surname"></td></tr>
+                <tr><td>E-mail:</td><td><input type="text"></td></tr>
+                <tr><td>Usługa:</td><td><textarea id="service"></textarea></td></tr>
+                <tr><td></td><td><input type="checkbox" id="statute">Zapoznałem się z regulaminem</td></tr>
+                <tr><td></td><td><input type="reset" value="Resetuj"><input type="button" value="Prześlij" onclick="usluga();"></td></tr>
+            </form>
+        </table>
+        <p id="wynik"></p>
+        <hr>
+    </article>
+    <footer class="menu">
+        <p>Autor strony: <b>00000000000</b></p>
+    </footer>
+</section>
+</body>
+</html>
