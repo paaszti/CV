@@ -1,0 +1,35 @@
+#lewa{
+	width: 40%;
+	height: 600px;
+	background-color: #FF8989;
+	float: left;
+}
+#prawa{
+	width: 60%;
+	height: 600px;
+	background-color: #7872D9;
+	float: left;
+}
+footer{
+	background-color: black;
+	color: white;
+	font-size: 150%;
+	text-align: right;
+	clear: both;
+}
+table, td{
+	padding: 30px;
+	margin: 20px;
+	border: 2px solid brown;
+	border-collapse: collapse;
+}
+#OBLICZ {
+	padding: 10px;
+	margin: 10px;
+	border: 2px solid blue;
+	background-color: cyan;
+	font-size: 20px;
+}
+h1 {
+	text-align: center;
+}
