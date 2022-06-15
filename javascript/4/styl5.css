@@ -1,0 +1,45 @@
+header {
+	background-color: #009999;
+	color: white;
+	text-align: center;
+	height: 80px;
+}
+.info {
+	font-family: Arial;
+	background-color: #009999;
+	color: white;
+	text-align: center;
+	width: 25%;
+	height: 150px;
+	float: left;
+}
+.wspolny {
+	background-color: #669999;
+	width: 30%;
+	height: 600px;
+	float: left;
+	color: black;
+}
+#srodkowy {
+	background-color: #99CCCC;
+	width: 40%;
+	height: 600px;
+	text-align: center;
+	float: left;
+	color: black;
+}
+footer {
+	background-color: #009999; 
+	color: white;
+	text-align: right;
+}
+table, td, th {
+	border: solid green 1px;
+	text-align: center;
+}
+input[type=button] {
+	border: none;
+	margin: 10px;
+	background-color: green;
+	color: white;
+}
