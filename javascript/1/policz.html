@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang = "pl-PL">
+<head>
+<meta charset="UTF-8">
+<title>Remonty mieszkań</title>
+<link rel="stylesheet" type="text/css" href="remont.css">
+<script>
+function oblicz()
+{
+	var p = parseInt(document.getElementById("p").value);
+	if (document.getElementById("a").checked==true && p>0)
+		document.getElementById("wynik").innerHTML="Koszt kafelkowania: "+70*p+" zł<br>";
+	if (document.getElementById("b").checked==true && p>0)
+		document.getElementById("wynik").innerHTML="Koszt kafelkowania: "+80*p+" zł<br>";
+}
+</script>
+</head>
+<body>
+<section class="menu">
+	<img src="logotyp.png">
+</section>
+<section class="menu">
+	<a href="index.html">O FIRMIE</a>
+</section>
+<section class="menu">
+	<a href="adres.html">ADRES </a>
+</section>
+<section class="menu">
+	<a href="policz.html">POLICZ</a>
+</section>
+<section class="menu">
+	<a href="http://www.jakremontowac.pl" target="_blank">LINKI</a>
+</section>
+<section id="glowny">
+	<h1>Kafelkowanie łazienki</h1>
+	<p>powierzchnia w m<sup>2</sup>:
+	<input type="number" name="powierzchnia" id="p"><br>
+	<input type="radio" name="opcje" id="a">Płytki 20 x 20cm<br>
+	<input type="radio" name="opcje" id="b">Płytki 25 x 12cm<br>
+	</p>
+	<input type="button" value="Przelicz" name="Przelicz" onclick="oblicz();">
+	<p id="wynik">
+	</p>
+</section>
+<footer>
+<p>Autor strony: 00000000000</p>
+</footer>
+</body>
+</html>
